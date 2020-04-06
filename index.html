@@ -19,7 +19,6 @@
         'contact': 'Contact Us',
         'desc': 'This is my description',
         'about': 'About',
-        'experience': 'Experience',
         'education': 'Education',
         'interests': 'Interests',
         'prueba': 'I am experienced in leveraging agile frameworks'+
@@ -27,7 +26,12 @@
          ' Iterative approaches to corporate strategy foster collaborative'+
          ' thinking to further the overall value proposition.',
          'direccion': 'Madrid, Spain',
-         'correo' : 'franclzd96@gmail.com'
+         'correo' : 'franclzd96@gmail.com',
+         'exp1' : 'Experience',
+         'exp1.1' : 'Full stack web-app developer',
+         'exp1.2' : 'Universidad de Jaén',
+         'exp1.3' : 'March 2019 - October 2019',
+         'exp1.4' : 'Full stack web-app developer in  “Universidad de Jaén” for 6 months (scholarship).'
 
 
       },
@@ -37,12 +41,17 @@
         'contact': 'Contacto',
         'desc': 'Descripcion',
         'about': 'Sobre mi',
-        'experience': 'Experiencia',
         'education': 'Formación',
         'interests': 'Gustos y Aficiones',
         'prueba': 'Texto en español de ESPAÑA',
         'direccion': 'Madrid, España ',
-        'correo' : 'franclzd96@gmail.com'
+        'correo' : 'franclzd96@gmail.com',
+        'exp1' : 'Experiencia',
+        'exp1.1' : 'Beca Icaro como desarrollador full stack',
+        'exp1.2' : 'Universidad de Jaén',
+        'exp1.3' : 'Marzo 2019 - Octubre 2019',
+        'exp1.4' : 'Contrato de 6 meses como desarrollador full stack de'+
+         ' aplicación web para el seguimiento del aprendizaje activo de estudios universitarios.'
       }
     };
 
@@ -52,6 +61,8 @@
         var lang = $(this).attr('id');
 
         $('.lang').each(function(index, item) {
+          console.log(index);
+          console.log(item);
           $(this).text(arrLang[lang][$(this).attr('key')]);
         });
       });
@@ -90,7 +101,7 @@
           <a class="nav-link js-scroll-trigger lang" key="about" href="#about">Sobre mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang" key="experience" href="#experience">Experiencia</a>
+          <a class="nav-link js-scroll-trigger lang" key="exp" href="#experience">Experiencia</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang" key="education" href="#education">Formación</a>
@@ -119,9 +130,11 @@
         <h1 class="mb-0">Fran
           <span class="text-primary">Calzado</span>
         </h1>
-        <div class="subheading mb-5 lang" key="direccion">Madrid, España
-          <a href="mailto:franclzd96@gmail.com">franclzd96@gmail.com</a>
+        <div class="subheading mb-5">
+          <span class="lang" key="direccion">Madrid, España</span>
+          <a href="mailto:franclzd96@gmail.com" class="lang" key="correo">franclzd96@gmail.com</a>
         </div>
+        
         <p class="lang" key="prueba">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
         <div class="social-icons">
         </a> <a href="https://www.instagram.com/francalzadomoya/">
@@ -150,54 +163,49 @@
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+      <div class="w-100">
+      <!-- DIV -->
+      <h2 class="mb-5 lang" key="exp1">Experiencia</h2>
+      <div class="row">
+        <div class="col-sm-2">           
+           <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="img/ujaen2.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="mb-0 lang" key="exp1.1">Senior Web Developer</h3>
+          <div class="subheading mb-3"><span class="lang" key="exp1.2">Solutions</span> </div>
+          <p class="lang" key="exp1.4">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        </div>
+        <div class="col-sm-3">
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang" key="exp1.3">March 2013 - Present</span>
+
           </div>
+        </div>
+      </div>
+      <!-- DIV -->
+      <div>
+<br>
+<br>
+      </div>
+      <!-- DIV -->
+      <div class="row">
+        <div class="col-sm-2">           
+           <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="img/deloitteGIF.gif" alt="">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="mb-0">Senior Web Developer</h3>
+          <div class="subheading mb-3">Intelitec Solutions</div>
+          <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        </div>
+        <div class="col-sm-3">
           <div class="resume-date text-md-right">
             <span class="text-primary">March 2013 - Present</span>
+
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
-
       </div>
+      <!-- DIV -->
 
     </section>
 
@@ -208,6 +216,7 @@
         <h2 class="mb-5">Education</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/perfil3.jpg" alt="">
           <div class="resume-content">
             <h3 class="mb-0">University of Colorado Boulder</h3>
             <div class="subheading mb-3">Bachelor of Science</div>
