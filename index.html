@@ -19,6 +19,7 @@
         'contact': 'Contact Us',
         'desc': 'This is my description',
         'about': 'About',
+        'certs' : 'Certifications & Skills',
         'education': 'Education',
         'interests': 'Interests',
         'prueba': 'I am experienced in leveraging agile frameworks'+
@@ -41,8 +42,9 @@
         'contact': 'Contacto',
         'desc': 'Descripcion',
         'about': 'Sobre mi',
+        'certs' : 'Certificaciones & Skills',
         'education': 'Formación',
-        'interests': 'Gustos y Aficiones',
+        'interests': 'Aficiones',
         'prueba': 'Texto en español de ESPAÑA',
         'direccion': 'Madrid, España ',
         'correo' : 'franclzd96@gmail.com',
@@ -51,7 +53,13 @@
         'exp1.2' : 'Universidad de Jaén',
         'exp1.3' : 'Marzo 2019 - Octubre 2019',
         'exp1.4' : 'Contrato de 6 meses como desarrollador full stack de'+
-         ' aplicación web para el seguimiento del aprendizaje activo de estudios universitarios.'
+         ' aplicación web para el seguimiento del aprendizaje activo de estudios universitarios.',
+
+        'exp2.1' : 'Beca Icaro como desarrollador full stack',
+        'exp2.2' : 'Deloitte',
+        'exp2.3' : 'Junio 2020 - Actual',
+        'exp2.4' : 'Contrato de 6 meses como desarrollador full stack de'+
+         ' aplicación web para el seguimiento del aprendizaje activo de estudios universitarios.'         
       }
     };
 
@@ -101,19 +109,19 @@
           <a class="nav-link js-scroll-trigger lang" key="about" href="#about">Sobre mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang" key="exp" href="#experience">Experiencia</a>
+          <a class="nav-link js-scroll-trigger lang" key="exp1" href="#experience">Experiencia</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang" key="education" href="#education">Formación</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          <a class="nav-link js-scroll-trigger lang" key="certs" href="#certs">Certificaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          <a class="nav-link js-scroll-trigger lang" key="interests" href="#interests">Aficiones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          <a class="nav-link js-scroll-trigger" href="#proyects">Proyectos</a>
         </li>
         <li class="nav-item">
           <a id="es" class="translate"><img src="img/spanish.png" ></a>
@@ -213,40 +221,56 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/perfil3.jpg" alt="">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
-          </div>
+        <h2 class="mb-5 lang" key="education">Formación</h2>
+        <!-- DIV -->
+      <div class="row">
+        <div class="col-sm-2">           
+           <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="img/UGR-COLOR.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="mb-0">Master en Cyberseguridad</h3>
+          <div class="subheading mb-3">Universidad de Granada</div>
+          <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        </div>
+        <div class="col-sm-3">
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
+            <span class="text-primary">March 2013 - Present</span>
+
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
+      </div>
+      <!-- DIV -->
+      <div>
+        <br>
+        <br>
+      </div>
+      <!-- DIV -->
+      <div class="row">
+        <div class="col-sm-2">           
+           <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="img/ujaen2.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="mb-0">Grado en Ingeniería Informática</h3>
+          <div class="subheading mb-3">Universidad de Jaén</div>
+          <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        </div>
+        <div class="col-sm-3">
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
+            <span class="text-primary">March 2013 - Present</span>
+
           </div>
         </div>
+      </div>
+      <!-- DIV -->
 
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="certs">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5 lang" key="certs">Certificaciones & Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
@@ -318,7 +342,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="proyects">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
