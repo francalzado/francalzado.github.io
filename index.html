@@ -7,16 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-<style>
-  .vertical-center {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-</style>
+  <style>
+    .vertical-center {
+      margin: 0;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  </style>
   <title>Resume - Start Bootstrap Theme</title>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -30,7 +29,8 @@
         'contact': 'Contact Us',
         'desc': 'This is my description',
         'about': 'About',
-        'certs': 'Certifications & Skills',
+        'certs': 'Certifications',
+        'certs1': 'Certifications & Aptitudes',
         'proyectos': 'Projects',
         'interests': 'Interests',
         'prueba': 'I am experienced in leveraging agile frameworks' +
@@ -78,6 +78,14 @@
         'cert1.4': '',
 
 
+        'sk1': '  With desire to learn and discover new knowledge',
+        'sk2': '  Skilled against adversity problems',
+        'sk3': '  Competitive and creative',
+        'sk4': '  Great ease of adapting to different environments',
+        'sk5': '  Pentesting',
+        'sk6': '  CyberSec World',
+
+
         'pro1.1': 'Project 1.1 ',
         'pro1.2': 'Project 1.1 ',
         'pro1.date': 'Project 1.1 ',
@@ -94,7 +102,9 @@
         'contact': 'Contacto',
         'desc': 'Descripcion',
         'about': 'Sobre mi',
-        'certs': 'Certificaciones & Skills',
+        'certs': 'Certificaciones',
+        'certs1': 'Certificaciones & Aptitudes',
+
         'proyectos': 'Proyectos',
         'interests': 'Aficiones',
         'direccion': 'Madrid, España ',
@@ -131,11 +141,20 @@
         'edu3.date': 'Octubre 2020 - Actualidad',
         'edu3.4': 'informacion del master.',
 
-        
+
         'cert1.1': 'Certificado B2 de CAMBRIDGE en Ingles',
         'cert1.2': '',
         'cert1.date': 'Junio 2014',
         'cert1.4': '',
+
+
+        'sk1': '  Con ganas de aprender y descubrir nuevos conocimientos.',
+        'sk2': '  Hábil ante problemas que puedan plantearse',
+        'sk3': '  Competitivo y creativo',
+        'sk4': '  Gran facilidad de adaptarme a diferentes entornos',
+        'sk5': '  Pentesting',
+        'sk6': '  Mundo de la Cyber',
+
 
         'pro1.1': 'Project 1.1 ',
         'pro1.2': 'Project 1.1 ',
@@ -194,7 +213,7 @@
           <a class="nav-link js-scroll-trigger lang" key="education" href="#education">Formación</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang" key="certs" href="#certs">Certificaciones & Skills</a>
+          <a class="nav-link js-scroll-trigger lang" key="certs1" href="#certs">Certificaciones & Aptitudes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang" key="interests" href="#interests">Aficiones</a>
@@ -262,7 +281,7 @@
             <h3 class="mb-0 lang" key="exp1.1">Beca Icaro como desarrollador full stack</h3>
             <div class="subheading mb-3"><span class="lang" key="exp1.2">Universidad de Jaén</span> </div>
             <p class="lang" key="exp1.4">Contrato de 6 meses como desarrollador full stack de aplicación web
-               para el seguimiento del aprendizaje activo de estudios universitarios.
+              para el seguimiento del aprendizaje activo de estudios universitarios.
 
             </p>
           </div>
@@ -361,14 +380,14 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="certs">
       <div class="w-100">
-        <h2 class="mb-5 lang" key="certs">Certificaciones & Skills</h2>
+        <h2 class="mb-5 lang" key="certs">Certificaciones</h2>
         <!-- DIV -->
-        <div class="row mb-5" >
+        <div class="row mb-5">
           <div class="col-sm-2">
             <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="img/cambridge.png" alt="">
           </div>
-          <div class="col-sm-7"  >
-            <h3 class="mb-0 lang vertical-center" key="cert1.1">Movilidad internacional ERASMUS+</h3>
+          <div class="col-sm-7">
+            <h3 class="mb-0 lang vertical-center" key="cert1.1">CERTIFICADO B2 DE CAMBRIDGE EN INGLES</h3>
             <!--<div class=" mb-3  lang" key="cert1.2"></div>-->
             <!--<p class=" lang" key="cert1.4">Grado en Ingeniería Informática (English).</p> -->
           </div>
@@ -379,40 +398,39 @@
           </div>
         </div>
         <!-- DIV -->
-        <!--- <div class="subheading mb-3">Programming Languages &amp; Tools</div> --->
+        <h2 class="mb-3 ">Aptitudes</h2>
+        <div class=row>
+            <div class="subheading mb-3">
+              <ul class="list-inline dev-icons">
+                <li >
+                  <h4 class="fas fa-smile-beam lang" key="sk1">  Con ganas de aprender y descubrir nuevos conocimientos. </h4>
+                </li>
+                <li>
+                  <h4 class="fas fa-smile-beam lang" key="sk2">  Hábil ante problemas que puedan plantearse. </h4>
+                </li>
+                <li >
+                  <h4 class="fas fa-smile-beam lang" key="sk3">  Competitivo y creativo </h4>
+                </li>
+                <li >
+                  <h4 class="fas fa-smile-beam lang" key="sk4"> Gran facilidad de adaptarme a diferentes entornos</h4>
+                </li>
+                <li>
+                  <h4 class="fas fa-smile-beam lang" key="sk5"> Pentesting</h4>
+                </li>                
+                <li>
+                  <h4 class="fas fa-smile-beam lang" key="sk6">Mundo de la Cyber </h4>
+                </li>
+              </ul>
 
-        <div class="subheading mb-3">
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fas fa-smile-beam"></i>
-            </li>
-          </ul>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fas fa-smile-beam"></i>
-            </li>
+            </div>
 
-            <li>
-              <i class="list-inline-item fa-li fa fa-graduation-cap"></i>
-              <span class="lang" key="titulo_ingles">Certificado B2 de CAMBRIDGE en Ingles</span> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-graduation-cap"></i>
-              Cross Browser Testing &amp; Debugging
-            </li>
+          </div>
 
-            <li>
-              <i class="fa-li fa fa-language"></i>
-              Titulo B2 Cambridge</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy"></i>
-              <span>Mobile-First, Responsive Design</span></li>
-            <li>
-              <i class="fa-li fa fa-car"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
+
+
+
         </div>
+
 
       </div>
     </section>
@@ -421,7 +439,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
+        <h2 class="mb-5 lang" key="interests">Aficiones</h2>
         <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier
           and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
           kayaking.</p>
