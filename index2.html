@@ -1,146 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+  <script>
 
-<head>
+  var paso;
+  for (paso = 0; paso < 5; paso++) {
+    // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+    console.log('Dando un paso al Este');
+  };
+  <form name="selectForm">
+    <p>
+      <label for="musicTypes">Choose some music types, then click the button below:</label>
+      <select id="musicTypes" name="musicTypes" multiple="multiple">
+        <option selected="selected">R&B</option>
+        <option>Jazz</option>
+        <option>Blues</option>
+        <option>New Age</option>
+        <option>Classical</option>
+        <option>Opera</option>
+      </select>
+    </p>
+    <p><input id="btn" type="button" value="How many are selected?" /></p>
+  </form>
+</script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Resume - Start Bootstrap Theme</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript">
-    var arrLang = {
-      'en': {
-        'home': 'Home',
-        'about': 'About Us',
-        'contact': 'Contact Us',
-        'desc': 'This is my description'
-      },
-      'es': {
-        'home': 'Casa',
-        'about': 'អំពីយើង',
-        'contact': 'ទំនាក់ទំនងយើងខ្ញុំ',
-        'desc': 'នេះគឺជាអត្ថបទរបស់ខ្ញុំ'
+  <script>
+  function howMany(selectObject) {
+    var numberSelected = 0;
+    for (var i = 0; i < selectObject.options.length; i++) {
+      if (selectObject.options[i].selected) {
+        numberSelected++;
       }
-    };
-
-    // Process translation
-    $(function() {
-      $('.translate').click(function() {
-        var lang = $(this).attr('id');
-
-        $('.lang').each(function(index, item) {
-          $(this).text(arrLang[lang][$(this).attr('key')]);
-        });
-      });
-    });
+    }
+    return numberSelected;
+  }
+  
+  var btn = document.getElementById("btn");
+  btn.addEventListener("click", function(){
+    alert('Number of options selected: ' + howMany(document.selectForm.musicTypes))
+  });
   </script>
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-  <div class="pull-right">
-
-</div>
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Francisco José Calzado Moya</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/perfil3.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-          <a id="es" class="translate"><img src="img/spanish.png" ></a>
-          <a id="en" class="translate"><img src="img/english.png" ></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-</body>
 
 </html>
